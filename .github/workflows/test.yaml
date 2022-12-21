@@ -10,5 +10,7 @@ jobs:
   triage:
     runs-on: ubuntu-latest
     steps:
-      - run: |
+      - name: conditional
+        if: ${{ inputs.config-path  }} != ""
+        run: |
           echo "here we are ${{ inputs.config-path}}"
