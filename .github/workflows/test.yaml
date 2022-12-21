@@ -11,6 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: conditional
-        if:  ${{ inputs.config-path  != ''}} && endsWith(github.ref, '-preview') == false
+        if:  ${{ inputs.config-path  != '' && endsWith(github.ref, '-preview') == false }}
         run: |
           echo "QUE NO TE PUEO CREER ${{ inputs.config-path}}"
