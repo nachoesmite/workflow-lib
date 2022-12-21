@@ -13,4 +13,4 @@ jobs:
       - name: conditional
         if: ${{ inputs.config-path  }} != ""
         run: |
-          echo "here we are ${{ inputs.config-path}}"
+          echo "QUE NO TE PUEO CREER ${{ inputs.config-path}}"
